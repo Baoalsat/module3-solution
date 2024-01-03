@@ -6,8 +6,8 @@ body {
 }
 
 #header-nav {
-  display: flex;
-  height: 250px;
+  display:flex;
+  height:250px;
       
   background-color: #f6b319;
     border-radius: 0;
@@ -25,38 +25,213 @@ body {
   left: 1px;
 }
 
-#logo{
-  background: url("../images/logo_res.png");
-  background-repeat: no-repeat;
-  display: flex;
-  
-    
-  }
-
-  .navbar-brand p {
-   position: relative;
-   margin-top: 85px;
-   left: 90px 
-
-} 
-
-@font-face {
-  font-family:'VN3DH';
-  src: url(../fonts/VN3DH.TTF);
+.navbar-brand {
+  padding-top: 25px;
 }
 .navbar-brand h1{ /* Restaurant name */
-  font-family:'VN3DH',serif;
+  font-family: '.VnArabia';
   color: #557c3e;
-  font-size: 1.5em;
+  font-size: 4.5em;
   text-transform: uppercase;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
+  margin-top: 80px;
   margin-bottom: 0;
-  line-height: .75;
-  position: absolute;
-  left: 50px;
-  top: 100px;
-  
+  margin-left: -270px;
+  line-height: .5;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar  {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: 30px;
+  margin-right: -180px;
   
 }
+
+
+@media (min-width: 1200px) {
+  h3{
+    font-size: 3em;
+    color: #f6b319;
+  }
+  p{
+    font-size: 2em;
+    font-family: '.VnKoala';
+    border-radius: 2px;
+    background-color: rgb(79, 1, 1);
+    width: 90%;
+    margin: auto;
+   
+  }
+  .navbar-brand h1{ /* Restaurant name */
+    font-family: '.VnArabia';
+    color: #557c3e;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 80px;
+    margin-bottom: 0;
+    margin-left: -20px;
+    line-height: .5;
+  }
+  
+  }
+
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  p{
+    font-size: 2em;
+    font-family: '.VnKoala';
+    border-radius: 2px;
+    background-color: rgb(79, 1, 1);
+    width: 90%;
+    margin: auto;
+   
+  }
+  .navbar-brand h1{ /* Restaurant name */
+    font-family: '.VnArabia';
+    color: #557c3e;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 80px;
+    margin-bottom: 0;
+    margin-left: -20px;
+    line-height: .5;
+  }
+ 
+  }
+ 
+  
+  /* End Home Page */
+
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+ 
+
+  #collapsable-nav a  {
+    /* Collapsed nav menu glyph */
+    font-size: 1.5em;
+    margin-right: 5px;
+    place-items: start;
+    color: #61122f;
+  }
+  p{
+    font-size: 2em;
+    font-family: '.VnKoala';
+    border-radius: 2px;
+    background-color: rgb(79, 1, 1);
+    width: 90%;
+    margin: auto;
+   
+  }
+  .navbar-brand h1{ /* Restaurant name */
+    font-family: '.VnArabia';
+    color: #557c3e;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 80px;
+    margin-bottom: 0;
+    margin-left: -20px;
+    line-height: .5;
+  }
+  
+  }
+  /* End Home Page */
+
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  p{
+    font-size: 2em;
+    font-family: '.VnKoala';
+    border-radius: 2px;
+    background-color: rgb(79, 1, 1);
+    width: 90%;
+    margin: auto;
+   
+  }
+  #collapsable-nav a  {
+    /* Collapsed nav menu glyph */
+    font-size: 1.5em;
+    margin-right: 5px;
+    color: #61122f;
+  }
+  .navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: 80px;
+    margin-right: -220px;
+    
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 7vw;
+    margin-left:-260px;
+  }
+  #header-nav {
+    display:flex;
+    height:180px;
+        
+    background-color: #f6b319;
+      border-radius: 0;
+      border: 0;
+  }
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 7vw;
+    margin-left:-150px;
+  }
+
+
+  p{
+    font-size: 2em;
+    font-family: '.VnKoala';
+    border-radius: 2px;
+    background-color: rgb(79, 1, 1);
+    width: 90%;
+    margin: auto;
+   
+  }
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+  
+}
+ 
+
+
+
+

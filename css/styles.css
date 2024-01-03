@@ -182,13 +182,14 @@ body {
   .navbar-header button.navbar-toggle {
     clear: both;
     margin-top: 80px;
-    margin-right: -220px;
+    margin-right: -70%;
     
   }
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 5px;
     font-size: 7vw;
-    margin-left:-260px;
+    margin-left:-90% ;
+   
   }
   #header-nav {
     display:flex;
@@ -208,6 +209,7 @@ body {
     padding-top: 5px;
     font-size: 7vw;
     margin-left:-150px;
+    position: relative;;
   }
 
 
